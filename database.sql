@@ -18,6 +18,23 @@ CREATE TABLE `student` (
   `department` varchar(10) NOT NULL,
   `section` varchar(10)  not NULL,
   'roll_no' int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
+
+CREATE TABLE `teacher` (
+  `name` varchar(10) NOT NULL,
+  `teacher_id` int NOT NULL,
+  `department` varchar(10) NOT NULL,
+  `email` varchar(10)  not NULL,
+  `subject` varchar(10)  not NULL,
+);
+CREATE TABLE `attendance` (
+  `date` date NOT NULL,
+  `teacher_id` int NOT NULL,
+  `department` varchar(10) NOT NULL,
+  `srn` varchar(10)  not NULL,
+  `subject` varchar(10)  not NULL,
+  `attendance` varchar(12) not NULL,
+  
+);
 
 
