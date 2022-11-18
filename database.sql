@@ -14,10 +14,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `student` (
   `name` varchar(10) NOT NULL,
-  `srn` int NOT NULL,
+  `srn` varchar(10) NOT NULL,
   `department` varchar(10) NOT NULL,
   `section` varchar(10)  not NULL,
   'roll_no' int NOT NULL
+  PRIMARY KEY (srn)
 );
 
 CREATE TABLE `teacher` (
@@ -25,16 +26,40 @@ CREATE TABLE `teacher` (
   `teacher_id` int NOT NULL,
   `department` varchar(10) NOT NULL,
   `email` varchar(10)  not NULL,
-  `subject` varchar(10)  not NULL,
+  `subject_id` varchar(10)  not NULL,
+  PRIMARY KEY (teacher_id)
+  FOREIGN KEY (subject_id) REFERENCES course(course_id)
+  FOREIGN KEY (teacher_id) REFERENCES attendance(teacher_id)
+  
 );
 CREATE TABLE `attendance` (
   `date` date NOT NULL,
   `teacher_id` int NOT NULL,
   `department` varchar(10) NOT NULL,
   `srn` varchar(10)  not NULL,
-  `subject` varchar(10)  not NULL,
+  `subject_id` varchar(10)  not NULL,
   `attendance` varchar(12) not NULL,
-  
+  `attendance_id` varchar(10) not NULL,
+  PRIMARY KEY (attendance_id)  
 );
+
+CREATE TABLE `course` (
+  `course_id` varchar(11) NOT NULL,
+  `course_name` varchar(11) NOT NULL,
+  `department` varchar(20) NOT NULL,
+  `semester` int  not NULL,
+  `teacher_id` varchar(10)  not NULL,
+  PRIMARY KEY (course_id),  
+);
+
+CREATE TABLE `admin` (
+  `username` varchar(10) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  PRIMARY KEY (username)  
+);
+
+
+
+
 
 
