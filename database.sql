@@ -87,18 +87,18 @@ insert into teacher (`name`,`teacher_id`,`department`,`email`,`subect_id`) value
 ('Mohit','T03','EEE','mohit@gmail.com');
 
 insert into attendance(`attendance_id`,`date`,`teacher_id`,`department`,`srn`,`subject_id`,`section`,`attendance`) values
-('A01','18-11-2022','TO1','CSE','CS667','CO1','K','P'),
-('A02','18-11-2022','TO1','CSE','CS668','CO1','K','P'),
-('A03','18-11-2022','TO1','CSE','CS669','CO1','K','A'),
-('A04','18-11-2022','TO1','CSE','CS609','CO1','K','P'),
-('A05','18-11-2022','TO2','CSE','CS685','CO4','L','P'),
-('A06','18-11-2022','TO2','CSE','CS564','CO4','L','P'),
-('A07','18-11-2022','TO2','CSE','CS467','CO4','L','A'),
-('A08','18-11-2022','TO2','CSE','CS617','CO4','L','P'),
-('A09','18-11-2022','TO2','CSE','CS345','CO4','L','P'),
-('A10','18-11-2022','TO2','CSE','CS200','CO4','L','P'),
-('A11','18-11-2022','TO3','EEE','CS110','CO3','C','P'),
-('A12','18-11-2022','TO3','EEE','CS111','CO3','C','P');
+('A01','2022-11-18','TO1','CSE','CS667','CO1','K','P'),
+('A02','2022-11-18','TO1','CSE','CS668','CO1','K','P'),
+('A03','2022-11-18','TO1','CSE','CS669','CO1','K','A'),
+('A04','2022-11-18','TO1','CSE','CS609','CO1','K','P'),
+('A05','2022-11-18','TO2','CSE','CS685','CO4','L','P'),
+('A06','2022-11-18','TO2','CSE','CS564','CO4','L','P'),
+('A07','2022-11-18','TO2','CSE','CS467','CO4','L','A'),
+('A08','2022-11-18','TO2','CSE','CS617','CO4','L','P'),
+('A09','2022-11-18','TO2','CSE','CS345','CO4','L','P'),
+('A10','2022-11-18','TO2','CSE','CS200','CO4','L','P'),
+('A11','2022-11-18','TO3','EEE','CS110','CO3','C','P'),
+('A12','2022-11-18','TO3','EEE','CS111','CO3','C','P');
 
 insert into admin(`username`,`password`) values
 ('admin','admin123');
