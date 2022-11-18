@@ -97,8 +97,8 @@ insert into attendance(`attendance_id`,`date`,`teacher_id`,`department`,`srn`,`s
 ('A08','18-11-2022','TO2','CSE','CS617','CO4','L','P'),
 ('A09','18-11-2022','TO2','CSE','CS345','CO4','L','P'),
 ('A10','18-11-2022','TO2','CSE','CS200','CO4','L','P'),
-('A11','18-11-2022','TO3','EEE','CS110','CO3','P'),
-('A12','18-11-2022','TO3','EEE','CS111','CO3','P');
+('A11','18-11-2022','TO3','EEE','CS110','CO3','C','P'),
+('A12','18-11-2022','TO3','EEE','CS111','CO3','C','P');
 
 insert into admin(`username`,`password`) values
 ('admin','admin123');
